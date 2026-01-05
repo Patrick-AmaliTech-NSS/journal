@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Mood Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header-title">Personal Mood Journal</h1>
+      <p class="header-subtitle">Record your thoughts and feelings</p>
+    </header>
+
+    <main class="main-content">
+      <section class="form-section">
+        <form id="journalForm" class="journal-form">
+          <div class="form-group">
+            <label for="titleInput" class="form-label">Title</label>
+            <input 
+              type="text" 
+              id="titleInput" 
+              class="form-input" 
+              placeholder="Enter entry title"
+              required
+              aria-label="Journal entry title"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="contentTextarea" class="form-label">Content</label>
+            <textarea 
+              id="contentTextarea" 
+              class="form-textarea" 
+              rows="6"
+              placeholder="Write your thoughts here..."
+              required
+              aria-label="Journal entry content"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="moodSelect" class="form-label">Mood</label>
+            <select id="moodSelect" class="form-select" required aria-label="Select mood">
+              <option value="">Select a mood</option>
+            </select>
+          </div>
+
+          <button type="submit" id="submitButton" class="btn btn-primary">
+            Add Entry
+          </button>
+        </form>
+      </section>
+
+      <section class="filter-section">
+        <div class="filter-group">
+          <label for="searchInput" class="filter-label">Search</label>
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="filter-input" 
+            placeholder="Search entries..."
+            aria-label="Search journal entries"
+          >
+        </div>
+
+        <div class="filter-group">
+          <label for="filterSelect" class="filter-label">Filter by Mood</label>
+          <select id="filterSelect" class="filter-select" aria-label="Filter by mood">
+            <option value="all">All Moods</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="entries-section">
+        <div id="entriesContainer" class="entries-container"></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>
