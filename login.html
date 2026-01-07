@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Signup - Personal Mood Journal</title>
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="auth-container">
+    <header class="auth-header">
+      <h1 class="auth-title">Login or Signup</h1>
+    </header>
+
+    <main class="auth-content">
+      <div class="social-buttons">
+        <button type="button" class="social-button" id="googleButton" aria-label="Continue with Google">
+          <img src="assets/icons/google.svg" alt="" aria-hidden="true" class="social-button-icon">
+          <span>Continue with Google</span>
+        </button>
+
+        <button type="button" class="social-button" id="facebookButton" aria-label="Continue with Facebook">
+          <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="social-button-icon">
+          <span>Continue with Facebook</span>
+        </button>
+      </div>
+
+      <div class="separator" aria-hidden="true">
+        <span>or</span>
+      </div>
+
+      <form class="auth-form" id="emailForm" novalidate>
+        <div class="form-group">
+          <label for="emailInput" class="form-label">Email</label>
+          <input 
+            type="email" 
+            id="emailInput" 
+            class="form-input" 
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+            aria-required="true"
+            aria-describedby="emailError"
+          >
+          <span id="emailError" class="sr-only" role="alert"></span>
+        </div>
+
+        <button type="submit" class="auth-button" id="continueButton">
+          Continue
+        </button>
+      </form>
+    </main>
+  </div>
+
+  <script type="module" src="dist/auth-login.js"></script>
+</body>
+</html>

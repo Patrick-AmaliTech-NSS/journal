@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights - Personal Mood Journal</title>
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="journal-container">
+    <header class="journal-header">
+      <div class="header-content">
+        <button 
+          type="button" 
+          class="icon-button back-button-header" 
+          id="backButton"
+          aria-label="Go back"
+        >
+          <img src="assets/icons/back.svg" alt="" aria-hidden="true" class="icon-img">
+        </button>
+        <h1 class="header-title">Insights</h1>
+        <div style="width: 24px;"></div>
+      </div>
+    </header>
+
+    <main class="journal-main">
+      <section class="insights-section">
+        <div class="stats-cards">
+          <div class="stat-card">
+            <div class="stat-number" id="streakCount">112</div>
+            <div class="stat-label">Streak</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="journalCount">98</div>
+            <div class="stat-label">Journals</div>
+          </div>
+        </div>
+
+        <div class="calendar-grid-container">
+          <div class="calendar-grid" id="calendarGrid" role="grid" aria-label="Journal entries calendar">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="dist/insights.js"></script>
+</body>
+</html>

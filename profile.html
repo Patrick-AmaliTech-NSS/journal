@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Personal Mood Journal</title>
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="journal-container">
+    <header class="journal-header">
+      <div class="header-content">
+        <button 
+          type="button" 
+          class="icon-button back-button-header" 
+          id="backButton"
+          aria-label="Go back"
+        >
+          <img src="assets/icons/back.svg" alt="" aria-hidden="true" class="icon-img">
+        </button>
+        <h1 class="header-title">Profile</h1>
+        <div style="width: 24px;"></div>
+      </div>
+    </header>
+
+    <main class="journal-main">
+      <section class="profile-section">
+        <div class="profile-info">
+          <div class="profile-avatar">
+            <img src="assets/icons/user.svg" alt="" aria-hidden="true" class="profile-avatar-icon">
+          </div>
+          <div class="profile-details">
+            <h2 class="profile-name" id="profileName">Jane Melwin</h2>
+            <p class="profile-email" id="profileEmail">janemelvin@gmail.com</p>
+          </div>
+        </div>
+
+        <nav class="settings-list" role="navigation" aria-label="Settings">
+          <a href="#" class="settings-item" id="accountSettings">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Account settings</span>
+          </a>
+
+          <a href="#" class="settings-item" id="securitySettings">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Security</span>
+          </a>
+
+          <a href="#" class="settings-item" id="dataStorage">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Data and storage</span>
+          </a>
+
+          <a href="#" class="settings-item" id="devices">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Devices</span>
+          </a>
+
+          <a href="#" class="settings-item" id="changeLanguage">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Change language</span>
+          </a>
+
+          <a href="insights.html" class="settings-item" id="journalStats">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Journal stats</span>
+          </a>
+
+          <a href="#" class="settings-item" id="notifications">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Notifications</span>
+          </a>
+
+          <a href="#" class="settings-item" id="changeTheme">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Change theme</span>
+          </a>
+
+          <a href="#" class="settings-item" id="referFriends">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Refer friends</span>
+          </a>
+
+          <a href="#" class="settings-item" id="privacyPolicy">
+            <img src="assets/icons/settings.svg" alt="" aria-hidden="true" class="settings-icon">
+            <span>Privacy policy</span>
+          </a>
+        </nav>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="dist/profile.js"></script>
+</body>
+</html>

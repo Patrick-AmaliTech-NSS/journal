@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal Entry - Personal Mood Journal</title>
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="journal-container entry-container">
+    <header class="entry-header-section">
+      <div class="entry-date-header">
+        <div class="entry-day-name" id="entryDayName">WEDNESDAY</div>
+        <div class="entry-day-number" id="entryDayNumber">09</div>
+        <div class="entry-month-name" id="entryMonthName">AUGUST</div>
+      </div>
+      <div class="entry-week-info" id="entryWeekInfo">WEEK 12</div>
+    </header>
+
+    <main class="entry-content-section">
+      <div class="journal-pages-container" id="journalPagesContainer">
+        <!-- Pages will be dynamically generated -->
+      </div>
+    </main>
+
+    <nav class="entry-navigation" role="navigation" aria-label="Entry navigation">
+      <button 
+        type="button" 
+        class="nav-button" 
+        id="firstButton"
+        aria-label="Go to first entry"
+      >
+        <img src="assets/icons/chevron-double-left.svg" alt="" aria-hidden="true" class="nav-icon">
+      </button>
+      <button 
+        type="button" 
+        class="nav-button" 
+        id="prevButton"
+        aria-label="Go to previous entry"
+      >
+        <img src="assets/icons/chevron-left.svg" alt="" aria-hidden="true" class="nav-icon">
+      </button>
+      <button 
+        type="button" 
+        class="nav-button" 
+        id="homeButton"
+        aria-label="Go to home"
+      >
+        <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="nav-icon">
+      </button>
+      <button 
+        type="button" 
+        class="nav-button nav-button-save" 
+        id="saveButton"
+        aria-label="Save entry"
+      >
+        <span class="nav-button-text">Save</span>
+      </button>
+      <button 
+        type="button" 
+        class="nav-button nav-button-delete" 
+        id="deleteButton"
+        aria-label="Delete entry"
+      >
+        <img src="assets/icons/close.svg" alt="" aria-hidden="true" class="nav-icon">
+      </button>
+      <button 
+        type="button" 
+        class="nav-button" 
+        id="nextButton"
+        aria-label="Go to next entry"
+      >
+        <img src="assets/icons/chevron-right.svg" alt="" aria-hidden="true" class="nav-icon">
+      </button>
+      <button 
+        type="button" 
+        class="nav-button" 
+        id="lastButton"
+        aria-label="Go to last entry"
+      >
+        <img src="assets/icons/chevron-double-right.svg" alt="" aria-hidden="true" class="nav-icon">
+      </button>
+    </nav>
+  </div>
+
+  <script type="module" src="dist/entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar - Personal Mood Journal</title>
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="journal-container">
+    <header class="journal-header">
+      <div class="header-content">
+        <button 
+          type="button" 
+          class="icon-button" 
+          id="menuButton"
+          aria-label="Open menu"
+        >
+          <img src="assets/icons/menu.svg" alt="" aria-hidden="true" class="icon-img">
+        </button>
+        <h1 class="header-title" id="calendarTitle">Calendar</h1>
+        <button 
+          type="button" 
+          class="icon-button" 
+          id="searchButton"
+          aria-label="Search entries"
+        >
+          <img src="assets/icons/search.svg" alt="" aria-hidden="true" class="icon-img">
+        </button>
+      </div>
+    </header>
+
+    <main class="journal-main calendar-main">
+      <div class="calendar-date-display" id="dateDisplay">
+        <div class="date-text-large" id="dayName">TUESDAY</div>
+        <div class="date-number-large" id="dayNumber">08</div>
+        <div class="date-text-large" id="monthName">AUGUST</div>
+      </div>
+
+      <div class="calendar-navigation">
+        <button 
+          type="button" 
+          class="calendar-nav-button" 
+          id="monthNavButton"
+          aria-label="Select month"
+        >
+          <span id="monthYearDisplay">AUGUST, 2023</span>
+          <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px;">
+        </button>
+      </div>
+
+      <div class="calendar-view-container">
+        <div id="calendarView" class="calendar-view">
+          <!-- Calendar grid will be rendered here -->
+        </div>
+      </div>
+
+      <div class="calendar-events" id="calendarEvents">
+        <!-- Events for selected day will be rendered here -->
+      </div>
+
+      <button 
+        type="button" 
+        class="calendar-new-entry-button" 
+        id="newEntryButton"
+        aria-label="Create new entry"
+      >
+        <img src="assets/icons/plus.svg" alt="" aria-hidden="true" style="width: 20px; height: 20px;">
+        <span>New Journal</span>
+      </button>
+    </main>
+  </div>
+
+  <script type="module" src="dist/calendar.js"></script>
+</body>
+</html>
